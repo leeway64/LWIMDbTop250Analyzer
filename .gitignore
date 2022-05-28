@@ -1,2 +1,12 @@
+# Python virtual environment
 .venv/
+
+
+# CMake build folder
+cmake-build/
+
+
+# Ignore everthing in the bin folder except .gitkeep
+bin/
+!bin/.gitkeep
 

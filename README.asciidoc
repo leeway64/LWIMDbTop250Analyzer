@@ -1,12 +1,50 @@
-= Project Template
+= LWIMDBTop250Analyzer
 
-Collected here are important files that can be used in any programming project or repository.
+LWIMDBTop250Analyzer is a program to analyze the top 250 movies from IMDb.
 
-To use, clone this repository, then rename the directory to the name of your project and delete the
-.git folder.
 
 == Installation
 
+[source, shell]
+--------------
+git clone https://github.com/leeway64/LWIMDBTop250Analyzer.git
+cd LWIMDBTop250Analyzer
+--------------
+
+
 == Usage
 
+=== IMDB Top 250
+
+Although information on the top 250 movies is already provided, to get the most up-to-date data, run the following:
+
+[source, shell]
+--------------
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+python include/IMDBTop250Retriever.py
+--------------
+
+This will create a YAML file containing data on the top 250 user-rated movies on IMDb.
+
+
+=== Creating Plots
+
+[source, shell]
+--------------
+cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_MAKE_PROGRAM=ninja -G Ninja -S . -B ./cmake-build
+cmake --build ./cmake-build --target LWIMDBTop250Analyzer
+bin/LWIMDBTop250Analyzer
+--------------
+
+
+== References
+
+* https://www.imdb.com/[IMDb]: The Internet Movie Database.
+
+
 == Third-party tools
+
+* https://github.com/cinemagoer/cinemagoer[Cinemagoer] (GPL-2.0 License): Python package for
+  retrieving data from IMDb.

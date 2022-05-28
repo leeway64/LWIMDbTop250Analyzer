@@ -21,6 +21,6 @@ if __name__ == "__main__":
         top_250_formatted[str(i + 1)] = movie
         
         
-        with open("IMDBTop250.yaml", 'w') as file:
+        with open("data/IMDBTop250.yaml", 'w') as file:
             yaml.dump(top_250_formatted, file)
         

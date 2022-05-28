@@ -1,0 +1,416 @@
+'1':
+  genres:
+  - Drama
+  rating: 9.3
+  title: The Shawshank Redemption
+  year: 1994
+'10':
+  genres:
+  - Adventure
+  - Western
+  rating: 8.8
+  title: The Good, the Bad and the Ugly
+  year: 1966
+'11':
+  genres:
+  - Drama
+  - Romance
+  rating: 8.8
+  title: Forrest Gump
+  year: 1994
+'12':
+  genres:
+  - Drama
+  rating: 8.8
+  title: Fight Club
+  year: 1999
+'13':
+  genres:
+  - Action
+  - Adventure
+  - Sci-Fi
+  - Thriller
+  rating: 8.8
+  title: Inception
+  year: 2010
+'14':
+  genres:
+  - Action
+  - Adventure
+  - Drama
+  - Fantasy
+  rating: 8.8
+  title: 'The Lord of the Rings: The Two Towers'
+  year: 2002
+'15':
+  genres:
+  - Action
+  - Adventure
+  - Fantasy
+  - Sci-Fi
+  rating: 8.7
+  title: 'Star Wars: Episode V - The Empire Strikes Back'
+  year: 1980
+'16':
+  genres:
+  - Action
+  - Sci-Fi
+  rating: 8.7
+  title: The Matrix
+  year: 1999
+'17':
+  genres:
+  - Biography
+  - Crime
+  - Drama
+  rating: 8.7
+  title: Goodfellas
+  year: 1990
+'18':
+  genres:
+  - Drama
+  rating: 8.7
+  title: One Flew Over the Cuckoo's Nest
+  year: 1975
+'19':
+  genres:
+  - Crime
+  - Drama
+  - Mystery
+  - Thriller
+  rating: 8.6
+  title: Se7en
+  year: 1995
+'2':
+  genres:
+  - Crime
+  - Drama
+  rating: 9.2
+  title: The Godfather
+  year: 1972
+'20':
+  genres:
+  - Action
+  - Drama
+  rating: 8.6
+  title: Seven Samurai
+  year: 1954
+'21':
+  genres:
+  - Drama
+  - Family
+  - Fantasy
+  - Romance
+  rating: 8.6
+  title: It's a Wonderful Life
+  year: 1946
+'22':
+  genres:
+  - Crime
+  - Drama
+  - Thriller
+  rating: 8.6
+  title: The Silence of the Lambs
+  year: 1991
+'23':
+  genres:
+  - Crime
+  - Drama
+  rating: 8.6
+  title: City of God
+  year: 2002
+'24':
+  genres:
+  - Drama
+  - War
+  rating: 8.6
+  title: Saving Private Ryan
+  year: 1998
+'25':
+  genres:
+  - Comedy
+  - Drama
+  - Romance
+  - War
+  rating: 8.6
+  title: Life Is Beautiful
+  year: 1997
+'26':
+  genres:
+  - Crime
+  - Drama
+  - Fantasy
+  - Mystery
+  rating: 8.6
+  title: The Green Mile
+  year: 1999
+'27':
+  genres:
+  - Adventure
+  - Drama
+  - Sci-Fi
+  rating: 8.6
+  title: Interstellar
+  year: 2014
+'28':
+  genres:
+  - Action
+  - Adventure
+  - Fantasy
+  - Sci-Fi
+  rating: 8.6
+  title: Star Wars
+  year: 1977
+'29':
+  genres:
+  - Action
+  - Sci-Fi
+  rating: 8.6
+  title: 'Terminator 2: Judgment Day'
+  year: 1991
+'3':
+  genres:
+  - Action
+  - Crime
+  - Drama
+  - Thriller
+  rating: 9.0
+  title: The Dark Knight
+  year: 2008
+'30':
+  genres:
+  - Adventure
+  - Comedy
+  - Sci-Fi
+  rating: 8.5
+  title: Back to the Future
+  year: 1985
+'31':
+  genres:
+  - Animation
+  - Adventure
+  - Family
+  - Fantasy
+  - Mystery
+  rating: 8.6
+  title: Spirited Away
+  year: 2001
+'32':
+  genres:
+  - Horror
+  - Mystery
+  - Thriller
+  rating: 8.5
+  title: Psycho
+  year: 1960
+'33':
+  genres:
+  - Biography
+  - Drama
+  - Music
+  - War
+  rating: 8.5
+  title: The Pianist
+  year: 2002
+'34':
+  genres:
+  - Action
+  - Crime
+  - Drama
+  - Thriller
+  rating: 8.5
+  title: "L\xE9on: The Professional"
+  year: 1994
+'35':
+  genres:
+  - Comedy
+  - Drama
+  - Thriller
+  rating: 8.5
+  title: Parasite
+  year: 2019
+'36':
+  genres:
+  - Animation
+  - Adventure
+  - Drama
+  - Family
+  - Musical
+  rating: 8.5
+  title: The Lion King
+  year: 1994
+'37':
+  genres:
+  - Action
+  - Adventure
+  - Drama
+  rating: 8.5
+  title: Gladiator
+  year: 2000
+'38':
+  genres:
+  - Drama
+  rating: 8.5
+  title: American History X
+  year: 1998
+'39':
+  genres:
+  - Crime
+  - Drama
+  - Mystery
+  - Thriller
+  rating: 8.5
+  title: The Usual Suspects
+  year: 1995
+'4':
+  genres:
+  - Crime
+  - Drama
+  rating: 9.0
+  title: 'The Godfather: Part II'
+  year: 1974
+'40':
+  genres:
+  - Crime
+  - Drama
+  - Thriller
+  rating: 8.5
+  title: The Departed
+  year: 2006
+'41':
+  genres:
+  - Drama
+  - Mystery
+  - Thriller
+  rating: 8.5
+  title: The Prestige
+  year: 2006
+'42':
+  genres:
+  - Drama
+  - Romance
+  - War
+  rating: 8.5
+  title: Casablanca
+  year: 1942
+'43':
+  genres:
+  - Drama
+  - Music
+  rating: 8.5
+  title: Whiplash
+  year: 2014
+'44':
+  genres:
+  - Biography
+  - Comedy
+  - Drama
+  rating: 8.5
+  title: The Intouchables
+  year: 2011
+'45':
+  genres:
+  - Comedy
+  - Drama
+  - Romance
+  rating: 8.5
+  title: Modern Times
+  year: 1936
+'46':
+  genres:
+  - Action
+  - Drama
+  - Mystery
+  rating: 8.6
+  title: Hara-Kiri
+  year: 1962
+'47':
+  genres:
+  - Western
+  rating: 8.5
+  title: Once Upon a Time in the West
+  year: 1968
+'48':
+  genres:
+  - Animation
+  - Drama
+  - War
+  rating: 8.5
+  title: Grave of the Fireflies
+  year: 1988
+'49':
+  genres:
+  - Mystery
+  - Thriller
+  rating: 8.5
+  title: Rear Window
+  year: 1954
+'5':
+  genres:
+  - Crime
+  - Drama
+  rating: 9.0
+  title: 12 Angry Men
+  year: 1957
+'50':
+  genres:
+  - Horror
+  - Sci-Fi
+  rating: 8.5
+  title: Alien
+  year: 1979
+'51':
+  genres:
+  - Comedy
+  - Drama
+  - Romance
+  rating: 8.5
+  title: City Lights
+  year: 1931
+'52':
+  genres:
+  - Drama
+  - Romance
+  rating: 8.5
+  title: Cinema Paradiso
+  year: 1988
+'53':
+  genres:
+  - Mystery
+  - Thriller
+  rating: 8.4
+  title: Memento
+  year: 2000
+'6':
+  genres:
+  - Biography
+  - Drama
+  - History
+  rating: 9.0
+  title: Schindler's List
+  year: 1993
+'7':
+  genres:
+  - Action
+  - Adventure
+  - Drama
+  - Fantasy
+  rating: 9.0
+  title: 'The Lord of the Rings: The Return of the King'
+  year: 2003
+'8':
+  genres:
+  - Crime
+  - Drama
+  rating: 8.9
+  title: Pulp Fiction
+  year: 1994
+'9':
+  genres:
+  - Action
+  - Adventure
+  - Drama
+  - Fantasy
+  rating: 8.8
+  title: 'The Lord of the Rings: The Fellowship of the Ring'
+  year: 2001

@@ -14,6 +14,13 @@ cd LWIMDBTop250Analyzer
 
 == Usage
 
+=== Prerequisites
+
+* https://cmake.org/[CMake]
+* https://ninja-build.org/[Ninja]
+* https://root.cern/[ROOT]: Refer to the https://root.cern/install/[installation page] for
+  more information on installing ROOT.
+
 === IMDB Top 250
 
 Although information on the top 250 movies is already provided, to get the most up-to-date data, run the following:

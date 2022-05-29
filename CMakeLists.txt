@@ -42,7 +42,7 @@ conan_cmake_install(PATH_OR_REFERENCE .
 find_package(yaml-cpp)
 
 add_executable (LWIMDBTop250Analyzer
-	"src/CreatePlots.cpp")
+	"src/CreatePlots.cpp" "src/Base.hpp" "src/Base.cpp")
 
 target_link_libraries(
 	LWIMDBTop250Analyzer

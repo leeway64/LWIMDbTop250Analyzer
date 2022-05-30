@@ -1,14 +1,14 @@
-= LWIMDBTop250Analyzer
+= LWIMDbTop250Analyzer
 
-LWIMDBTop250Analyzer is a program to analyze the top 250 movies from IMDb.
+LWIMDbTop250Analyzer is a program to analyze the top 250 movies from IMDb.
 
 
 == Installation
 
 [source, shell]
 --------------
-git clone https://github.com/leeway64/LWIMDBTop250Analyzer.git
-cd LWIMDBTop250Analyzer
+git clone https://github.com/leeway64/LWIMDbTop250Analyzer.git
+cd LWIMDbTop250Analyzer
 --------------
 
 
@@ -21,7 +21,7 @@ cd LWIMDBTop250Analyzer
 * https://root.cern/[ROOT]: Refer to the https://root.cern/install/[installation page] for
   more information on installing ROOT.
 
-=== IMDB Top 250
+=== IMDb Top 250
 
 Although information on the top 250 movies is already provided, to get the most up-to-date data, run the following:
 
@@ -30,7 +30,7 @@ Although information on the top 250 movies is already provided, to get the most 
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-python include/IMDBTop250Retriever.py
+python include/IMDbTop250Retriever.py
 --------------
 
 This will create a YAML file containing data on the top 250 user-rated movies on IMDb.

@@ -1,29 +1,20 @@
 #include <iostream>
+#include "Subclass.hpp"
+
 #include <yaml-cpp/yaml.h>
-
-
-// an enum class is like an enum, but strongly typed
-enum class Success
-{
-    success = 0
-};
-
-
-void exitMessage(Success s)
-{
-    if (s == Success::success)
-    {
-        std::cout << "IMDb Top 250 analyzed successfully" << std::endl;        
-    }
-}
 
 
 int main()
 {
-    std::cout << "hello world" << std::endl;
+    Base * b = new Base();
+
+    Base * sub = new Subclass();
 
     Success S = Success::success;
-    exitMessage(S);
+    b->message(S);
+    sub->message(S);
+    
+    
     return 0;
 }
 

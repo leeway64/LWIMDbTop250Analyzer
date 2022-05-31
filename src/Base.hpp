@@ -10,7 +10,7 @@ class Base
         Base();
     
     // protected functions are only accessible to classes that inherit from this class with public
-    // or private access
+    // or protected access
     protected:
         std::string info;
         

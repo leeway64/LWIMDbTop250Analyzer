@@ -18,6 +18,7 @@ cd LWIMDbTop250Analyzer
 
 * https://cmake.org/[CMake]
 * https://ninja-build.org/[Ninja]
+* https://conan.io/[Conan]
 * https://root.cern/[ROOT]: Refer to the https://root.cern/install/[installation page] for
   more information on installing ROOT.
 

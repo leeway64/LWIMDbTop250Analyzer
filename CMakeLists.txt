@@ -47,7 +47,9 @@ add_executable (LWIMDBTop250Analyzer
 	"src/Base.cpp"
 	"src/Subclass.hpp"
 	"src/Subclass.cpp"
-	"src/AbstractClass.hpp")
+	"src/AbstractClass.hpp"
+	"src/AnalyzerFunctions.hpp"
+	"src/AnalyzerFunctions.cpp")
 
 target_link_libraries(
 	LWIMDBTop250Analyzer

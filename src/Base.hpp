@@ -1,9 +1,4 @@
-// an enum class is like an enum, but strongly typed
-enum class Success
-{
-    success = 0
-};
-
+#include "AbstractClass.hpp"
 
 class Base
 {
@@ -14,10 +9,12 @@ class Base
         // Default constructor
         Base();
     
+    // protected functions are only accessible to classes that inherit from this class with public
+    // or private access
     protected:
         std::string info;
         
-        
+    // friend functions can access anything inside the class, even if it's protected or private
     friend std::string getInfo(const Base* b);
     friend void setInfo(Base* b, std::string information);
 };

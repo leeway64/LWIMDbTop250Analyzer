@@ -13,16 +13,19 @@ int main()
     std::vector<int> years_list{};
     std::vector<std::string> cast_list{};
     
-    for (const auto& movie : IMDbInfo)
+    for (const auto& movie: IMDbInfo)
     {
-        std::cout << movie.first.as<std::string>()<< std::endl;
-        for (const auto& genre : movie.second["genres"])
+        for (const auto& genre: movie.second["genres"])
         {
             genres_list.push_back(genre.as<std::string>());
         }
         
+        for (const auto& cast_member: movie.second["cast"])
+        {
+            cast_list.push_back(cast_member.as<std::string>());
+        }
+        
         ratings_list.push_back(movie.second["rating"].as<double>());
-        std::cout << movie.second["title"].as<std::string>()<< std::endl;
         years_list.push_back(movie.second["year"].as<int>());
     }
 
@@ -31,6 +34,21 @@ int main()
     std::unordered_map<std::string, int> genres_count = AnalyzerFunctions::count_genres(genres_list);
     std::unordered_map<double, int> ratings_count = AnalyzerFunctions::count_ratings(ratings_list);
     std::unordered_map<std::string, int> cast_count = AnalyzerFunctions::count_cast(cast_list);
+
+    for (auto [key, value]: decades_count)
+    {
+        std::cout << key << " " << value << std::endl;
+    }
+
+    for (auto [key, value]: genres_count)
+    {
+        std::cout << key << " " << value << std::endl;
+    }
+
+    for (auto [key, value]: ratings_count)
+    {
+        std::cout << key << " " << value << std::endl;
+    }
 
 
     Base * b = new Base();

@@ -3,19 +3,23 @@ import yaml
 
 
 if __name__ == "__main__":
+    # A dictionary containing information about IMDb's top 250 user-rated movies
     top_250_formatted = dict()
 
-    ia = Cinemagoer()
-    top250 = ia.get_top250_movies()
+    # Instantiate a Cinemagoer class
+    cinema = Cinemagoer()
+    top250 = cinema.get_top250_movies()
 
-    for i in range(len(top250)):
+
+    for i in range(len(top250)):  # Iterate through all 250 movies
         movie = dict()
         movie['title'] = top250[i]['title']
         movie['year'] = top250[i]['year']
         ID = top250[i].movieID
 
-        movie_info = ia.get_movie(ID)
+        movie_info = cinema.get_movie(ID)
         movie['genres'] = movie_info['genres']
+        movie['cast'] = movie_info['cast']
         movie['rating'] = movie_info['rating']
         
         top_250_formatted[str(i + 1)] = movie

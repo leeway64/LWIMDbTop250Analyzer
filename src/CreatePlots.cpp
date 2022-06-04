@@ -35,6 +35,8 @@ int main()
     std::unordered_map<double, int> ratings_count = AnalyzerFunctions::count_ratings(ratings_list);
     std::unordered_map<std::string, int> cast_count = AnalyzerFunctions::count_cast(cast_list);
 
+    
+
     for (auto [key, value]: decades_count)
     {
         std::cout << key << " " << value << std::endl;
@@ -50,6 +52,13 @@ int main()
         std::cout << key << " " << value << std::endl;
     }
 
+    for (auto [key, value]: cast_count)
+    {
+        if (value >= 2)
+        {
+            std::cout << key << " " << value << std::endl;
+        }
+    }
 
     Base * b = new Base();
     Base * sub = new Subclass();

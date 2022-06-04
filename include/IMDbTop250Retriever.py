@@ -3,6 +3,8 @@ import yaml
 
 
 if __name__ == "__main__":
+    print("Retrieving IMDb Top 250 data")
+    
     # A dictionary containing information about IMDb's top 250 user-rated movies
     top_250_formatted = dict()
 
@@ -19,7 +21,13 @@ if __name__ == "__main__":
 
         movie_info = cinema.get_movie(ID)
         movie['genres'] = movie_info['genres']
-        movie['cast'] = movie_info['cast']
+        
+        cast_list = []
+        for cast_member in movie_info['cast']:
+            cast_list.append(cast_member['name'])
+
+        movie['cast'] = cast_list
+        
         movie['rating'] = movie_info['rating']
         
         top_250_formatted[str(i + 1)] = movie
@@ -27,4 +35,6 @@ if __name__ == "__main__":
         
         with open("data/IMDBTop250.yaml", 'w') as file:
             yaml.dump(top_250_formatted, file)
-        
+    
+    print("Data retrieval finished")
+

@@ -1,9 +1,18 @@
-from imdb import Cinemagoer
 import yaml
+import sys
+
+from imdb import Cinemagoer
 
 
 if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        raise RuntimeError("Incorrect number of arguments! Provide the path where you want the data file to go.")
+    
+    
+    path = f'{sys.argv[1]}'
+
     print("Retrieving IMDb Top 250 data")
+        
     
     # A dictionary containing information about IMDb's top 250 user-rated movies
     top_250_formatted = dict()
@@ -32,8 +41,8 @@ if __name__ == "__main__":
         
         top_250_formatted[str(i + 1)] = movie
         
-        
-        with open("data/IMDBTop250.yaml", 'w') as file:
+        # I need to write to the file continually inside this for loop, because otherwise a timeout error will occur
+        with open(path, 'w') as file:
             yaml.dump(top_250_formatted, file)
     
     print("Data retrieval finished")

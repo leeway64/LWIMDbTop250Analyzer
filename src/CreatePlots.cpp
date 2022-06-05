@@ -1,4 +1,6 @@
 #include <iostream>
+#include <filesystem>
+
 #include <yaml-cpp/yaml.h>
 
 #include "AnalyzerFunctions.hpp"
@@ -22,7 +24,7 @@ int main()
     std::cout << getInfo(b) << std::endl;  // Print movie recommendation
     
 
-    const YAML::Node IMDbInfo = YAML::LoadFile("IMDBTop250.yaml");
+    const YAML::Node IMDbInfo = YAML::LoadFile("IMDbTop250.yaml");
     
     std::vector<std::string> genres_list{};
     std::vector<double> ratings_list{};
@@ -70,7 +72,7 @@ int main()
     for (auto [key, value]: cast_count)
     {
         
-        if (value >= 2)
+        if (value >= 3)
         {
             std::cout << key << " " << value << std::endl;
         }

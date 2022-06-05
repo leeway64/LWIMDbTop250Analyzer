@@ -2,11 +2,11 @@
 #include <yaml-cpp/yaml.h>
 
 #include "AnalyzerFunctions.hpp"
-#include "Subclass.hpp"
+
 
 int main()
 {
-    YAML::Node IMDbInfo = YAML::LoadFile("IMDBTop250.yaml");
+    const YAML::Node IMDbInfo = YAML::LoadFile("IMDBTop250.yaml");
     
     std::vector<std::string> genres_list{};
     std::vector<double> ratings_list{};
@@ -54,6 +54,7 @@ int main()
 
     for (auto [key, value]: cast_count)
     {
+        
         if (value >= 2)
         {
             std::cout << key << " " << value << std::endl;
@@ -63,8 +64,12 @@ int main()
     Base * b = new Base();
     Base * sub = new Subclass();
 
-    std::string help_message = "Usage: LWIMDbAnalyzer [PATH TO YAML]";
-    setInfo(b, help_message);
+    std::string movie_recommendation = "Check out \"Everything Everywhere All at Once\"! ";
+    movie_recommendation += "This is one of the best movies that I've seen in a long time.\n";
+    movie_recommendation += "Directed by Daniels\n";
+    movie_recommendation += "Starring Michelle Yeoh, Stephanie Hsu, and Ke Huy Quan";
+    
+    setInfo(b, movie_recommendation);
 
 
     Success S = Success::success;

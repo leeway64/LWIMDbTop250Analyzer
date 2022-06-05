@@ -4,6 +4,9 @@
 
 Subclass::Subclass(){}
 
+// TODO: destructor
+Subclass::~Subclass(){}
+
 void Subclass::message(Success s)
 {
     if (s == Success::success)

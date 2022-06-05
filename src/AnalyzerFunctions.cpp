@@ -6,7 +6,7 @@ std::unordered_map<int, int> AnalyzerFunctions::count_decades(std::vector<int> y
     std::unordered_map<int, int> decades_count{};
     for (const auto& year: years_list)
     {
-        const int decade = (year / 10) * 10
+        const int decade = (year / 10) * 10;
         if (!decades_count.contains(decade))
         {
             decades_count[decade] = 0;
@@ -62,5 +62,10 @@ std::unordered_map<std::string, int> AnalyzerFunctions::count_cast(std::vector<s
         ++cast_count[cast_member];
     }
     return cast_count;
+}
+
+void AnalyzerFunctions::printHelp()
+{
+    
 }
 

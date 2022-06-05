@@ -1,5 +1,11 @@
 #include "AbstractClass.hpp"
 
+class InfoNode
+{
+    public:
+        std::string information;
+};
+
 class Base
 {
     public:

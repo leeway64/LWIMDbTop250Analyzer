@@ -31,7 +31,7 @@ Although information on the top 250 movies is already provided, to get the most 
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-python include/IMDbTop250Retriever.py
+python include/IMDbTop250Retriever.py data/IMDbTop250.yaml
 --------------
 
 This will create a YAML file containing data on the top 250 user-rated movies on IMDb.

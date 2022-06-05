@@ -66,6 +66,10 @@ std::unordered_map<std::string, int> AnalyzerFunctions::count_cast(std::vector<s
 
 void AnalyzerFunctions::printHelp()
 {
-    
+    Subclass sub = Subclass();
+    sub.node = new InfoNode();
+    sub.node->information = "Usage\n";
+    sub.node->information += "\tLWIMDBTop250Analyzer [OPTIONS]";
+    std::cout << sub.node->information << std::endl;
 }
 

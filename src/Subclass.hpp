@@ -10,6 +10,8 @@ class Subclass : public Base
         void message(Success s) override;
         
         Subclass();
+        
+        // Destructor for Subclass; free up the memory that was used for InfoNode* node
         ~Subclass();
         
         // Make this class non-copyable by deleting the copy constructor and the assignment operator.

@@ -6,6 +6,22 @@
 
 int main()
 {
+    Base * b = new Base();
+    Base * sub = new Subclass();
+
+    std::string movie_recommendation = "Check out \"Everything Everywhere All at Once\"! ";
+    movie_recommendation += "This is one of the best movies that I've seen in a long time.\n";
+    movie_recommendation += "\tDirected by Daniels\n";
+    movie_recommendation += "\tStarring Michelle Yeoh, Stephanie Hsu, and Ke Huy Quan";
+    
+    setInfo(b, movie_recommendation);
+
+
+    Success S = Success::success;
+    b->message(S);  // Print intro message
+    std::cout << getInfo(b) << std::endl;  // Print movie recommendation
+    
+
     const YAML::Node IMDbInfo = YAML::LoadFile("IMDBTop250.yaml");
     
     std::vector<std::string> genres_list{};
@@ -36,7 +52,6 @@ int main()
     std::unordered_map<std::string, int> cast_count = AnalyzerFunctions::count_cast(cast_list);
 
     
-
     for (auto [key, value]: decades_count)
     {
         std::cout << key << " " << value << std::endl;
@@ -61,21 +76,9 @@ int main()
         }
     }
 
-    Base * b = new Base();
-    Base * sub = new Subclass();
-
-    std::string movie_recommendation = "Check out \"Everything Everywhere All at Once\"! ";
-    movie_recommendation += "This is one of the best movies that I've seen in a long time.\n";
-    movie_recommendation += "Directed by Daniels\n";
-    movie_recommendation += "Starring Michelle Yeoh, Stephanie Hsu, and Ke Huy Quan";
+    AnalyzerFunctions::printHelp();
     
-    setInfo(b, movie_recommendation);
-
-
-    Success S = Success::success;
-    b->message(S);
-    std::cout << getInfo(b) << std::endl;
-    sub->message(S);
+    sub->message(S);  // Print exit message
         
     return 0;
 }

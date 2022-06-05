@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.8)
 
 project (
-	"LWIMDBTop250Analyzer"
+	"LWIMDbTop250Analyzer"
 	LANGUAGES CXX
 	VERSION "1.0.0"
 	)
@@ -41,7 +41,7 @@ conan_cmake_install(PATH_OR_REFERENCE .
 
 find_package(yaml-cpp)
 
-add_executable (LWIMDBTop250Analyzer
+add_executable (LWIMDbTop250Analyzer
 	"src/CreatePlots.cpp"
 	"src/Base.hpp"
 	"src/Base.cpp"
@@ -52,7 +52,7 @@ add_executable (LWIMDBTop250Analyzer
 	"src/AnalyzerFunctions.cpp")
 
 target_link_libraries(
-	LWIMDBTop250Analyzer
+	LWIMDbTop250Analyzer
 	PRIVATE
 		yaml-cpp::yaml-cpp
 )

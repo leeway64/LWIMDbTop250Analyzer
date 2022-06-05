@@ -42,8 +42,8 @@ This will create a YAML file containing data on the top 250 user-rated movies on
 [source, shell]
 --------------
 cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_MAKE_PROGRAM=ninja -G Ninja -S . -B ./cmake-build
-cmake --build ./cmake-build --target LWIMDBTop250Analyzer
-bin/LWIMDBTop250Analyzer
+cmake --build ./cmake-build --target LWIMDbTop250Analyzer
+bin/LWIMDbTop250Analyzer
 --------------
 
 

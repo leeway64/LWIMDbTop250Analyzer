@@ -1,12 +1,13 @@
 # Python virtual environment
 .venv/
 
+# CLion IDE settings
+.idea
 
 # CMake build folder
-cmake-build/
+cmake-build*/
 
 
 # Ignore everthing in the bin folder except .gitkeep
 bin/
 !bin/.gitkeep
-
